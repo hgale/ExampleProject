@@ -16,7 +16,7 @@ const MainStack = createStackNavigator(
   {
     initialRouteName: Routes.Welcome,
     navigationOptions: (props: any) => ({
-      headerStyle: { backgroundColor: colors.WHITE },
+      headerStyle: { backgroundColor: colors.ORANGE },
     }),
   },
 );

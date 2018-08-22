@@ -3,6 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import { NavigationScreenProp } from 'react-navigation';
 import { connect } from 'react-redux';
 import { incrementCount } from 'src/redux/actions';
+import { colors } from 'src/utils/styles';
 
 interface Props {
   navigation: NavigationScreenProp<any,any>;
@@ -40,12 +41,13 @@ class OtherScreen extends React.Component<Props, {}> {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: colors.BACKGROUND,
     flex: 1,
     justifyContent: 'center',
   },
   text: {
-    fontSize: 20,    
+    color: colors.WHITE,
+    fontSize: 20,
     margin: 10,
     textAlign: 'center',
   },

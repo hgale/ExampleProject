@@ -3,6 +3,7 @@ import * as React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import { NavigationScreenProp } from 'react-navigation';
 import Routes from 'src/utils/routes';
+import { colors } from 'src/utils/styles';
 
 interface Props {
   navigation: NavigationScreenProp<any,any>;
@@ -29,11 +30,12 @@ class WelcomeScreen extends React.Component<Props, {}> {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: colors.BACKGROUND,
     flex: 1,
     justifyContent: 'center',
   },
   welcome: {
+    color: colors.WHITE,
     fontSize: 20,    
     margin: 10,
     textAlign: 'center',
