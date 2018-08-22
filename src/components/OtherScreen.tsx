@@ -1,29 +1,26 @@
 import * as React from 'react';
-
 import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import { NavigationScreenProp } from 'react-navigation';
-import Routes from 'src/utils/routes';
 
 interface Props {
   navigation: NavigationScreenProp<any,any>;
 }
 
-class WelcomeScreen extends React.Component<Props, {}> {
-  pushScreen = () => {
+class OtherScreen extends React.Component<Props, {}> {
+  dissmissScreen = () => {
     const navigation = this.props.navigation;
-    navigation.navigate(Routes.Other);
+    navigation.goBack();
   }
-
+  
   render() {
     return (
       <View style={ styles.container }>
-        <Text style={ styles.welcome }>Hello world</Text>
-        <TouchableOpacity onPress={ this.pushScreen }>
-          <Text style={ styles.welcome }>Push Screen</Text>
+        <TouchableOpacity onPress={ this.dissmissScreen }>
+          <Text style={ styles.other }>Other Screen</Text>
         </TouchableOpacity>
       </View>
     );
-  }
+  }  
 }
 
 const styles = StyleSheet.create({
@@ -33,11 +30,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
-  welcome: {
+  other: {
     fontSize: 20,    
     margin: 10,
     textAlign: 'center',
   },
 });
 
-export default WelcomeScreen;
+export default OtherScreen;
