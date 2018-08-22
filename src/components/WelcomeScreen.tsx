@@ -17,9 +17,9 @@ class WelcomeScreen extends React.Component<Props, {}> {
   render() {
     return (
       <View style={ styles.container }>
-        <Text style={ styles.welcome }>Hello world</Text>
+        <Text style={ styles.welcome }>Welcome Screen</Text>
         <TouchableOpacity onPress={ this.pushScreen }>
-          <Text style={ styles.welcome }>Push Screen</Text>
+          <Text style={ styles.welcome }>Go to Other Screen</Text>
         </TouchableOpacity>
       </View>
     );
