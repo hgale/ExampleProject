@@ -28,10 +28,14 @@ class OtherScreen extends React.Component<Props, {}> {
         <Text style={ styles.text }>Other Screen</Text>
         <Text style={ styles.text }>Count: { count }</Text>
         <TouchableOpacity onPress={ this.incrementCount }>
-          <Text style={ styles.text }>Increment Count</Text>
+          <View style={ styles.buttonContainer }>
+            <Text style={ styles.text }>Increment Count</Text>
+          </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={ this.dissmissScreen }>
-          <Text style={ styles.text }>Go Back</Text>
+          <View style={ styles.buttonContainer }>
+            <Text style={ styles.text }>Go Back</Text>
+          </View>
         </TouchableOpacity>
       </View>
     );
@@ -44,6 +48,17 @@ const styles = StyleSheet.create({
     backgroundColor: colors.BACKGROUND,
     flex: 1,
     justifyContent: 'center',
+  },
+  buttonContainer: {
+    marginTop: 50,
+    width: 180,
+    height: 64,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.LIGHT_PURPLE,
+    borderRadius:10,
+    borderWidth: 1,
+    borderColor: colors.WHITE,
   },
   text: {
     color: colors.WHITE,

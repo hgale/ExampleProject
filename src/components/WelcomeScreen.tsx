@@ -20,7 +20,9 @@ class WelcomeScreen extends React.Component<Props, {}> {
       <View style={ styles.container }>
         <Text style={ styles.welcome }>Welcome Screen</Text>
         <TouchableOpacity onPress={ this.pushScreen }>
-          <Text style={ styles.welcome }>Go to Other Screen</Text>
+          <View style={ styles.buttonContainer }>
+            <Text style={ styles.welcome }>Go to Other Screen</Text>
+          </View>
         </TouchableOpacity>
       </View>
     );
@@ -33,6 +35,17 @@ const styles = StyleSheet.create({
     backgroundColor: colors.BACKGROUND,
     flex: 1,
     justifyContent: 'center',
+  },
+  buttonContainer: {
+    marginTop: 50,
+    width: '50%',
+    height: 64,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.LIGHT_PURPLE,
+    borderRadius:10,
+    borderWidth: 1,
+    borderColor: colors.WHITE,
   },
   welcome: {
     color: colors.WHITE,
