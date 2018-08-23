@@ -1,6 +1,6 @@
 const routes = {
   Welcome: 'Welcome',
-  Other: 'Other',
+  Count: 'Count',
 };
 
 export default routes;

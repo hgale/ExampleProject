@@ -1,21 +1,15 @@
 import * as React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import { NavigationScreenProp } from 'react-navigation';
 import { connect } from 'react-redux';
 import { incrementCount } from 'src/redux/actions';
 import { colors } from 'src/utils/styles';
 
 interface Props {
-  navigation: NavigationScreenProp<any,any>;
   count: number;
   incrementCount: () => any;
 }
 
-class OtherScreen extends React.Component<Props, {}> {
-  dissmissScreen = () => {
-    const navigation = this.props.navigation;
-    navigation.goBack();
-  }
+class CountScreen extends React.Component<Props, {}> {
 
   incrementCount = () => {
     this.props.incrementCount();
@@ -25,16 +19,11 @@ class OtherScreen extends React.Component<Props, {}> {
     const count = this.props.count;
     return (
       <View style={ styles.container }>
-        <Text style={ styles.text }>Other Screen</Text>
+        <Text style={ styles.text }>Count Screen</Text>
         <Text style={ styles.text }>Count: { count }</Text>
         <TouchableOpacity onPress={ this.incrementCount }>
           <View style={ styles.buttonContainer }>
             <Text style={ styles.text }>Increment Count</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={ this.dissmissScreen }>
-          <View style={ styles.buttonContainer }>
-            <Text style={ styles.text }>Go Back</Text>
           </View>
         </TouchableOpacity>
       </View>
@@ -76,4 +65,4 @@ const mapDispatchToProps = (dispatch : any, props: any) => ({
   incrementCount: () => dispatch(incrementCount()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(OtherScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(CountScreen);

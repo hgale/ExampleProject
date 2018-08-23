@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { createStackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
-import OtherScreen from 'src/components/OtherScreen';
+import CountScreen from 'src/components/CountScreen';
 import WelcomeScreen from 'src/components/WelcomeScreen';
 import configureStore from 'src/redux/store';
 import Routes from 'src/utils/routes';
@@ -11,7 +11,7 @@ import { colors } from 'src/utils/styles';
 const MainStack = createStackNavigator(
   {
     Welcome: { screen: WelcomeScreen },
-    Other: { screen: OtherScreen},
+    Count: { screen: CountScreen},
   },
   {
     initialRouteName: Routes.Welcome,

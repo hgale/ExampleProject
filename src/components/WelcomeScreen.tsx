@@ -12,7 +12,7 @@ interface Props {
 class WelcomeScreen extends React.Component<Props, {}> {
   pushScreen = () => {
     const navigation = this.props.navigation;
-    navigation.navigate(Routes.Other);
+    navigation.navigate(Routes.Count);
   }
 
   render() {
@@ -21,7 +21,7 @@ class WelcomeScreen extends React.Component<Props, {}> {
         <Text style={ styles.welcome }>Welcome Screen</Text>
         <TouchableOpacity onPress={ this.pushScreen }>
           <View style={ styles.buttonContainer }>
-            <Text style={ styles.welcome }>Go to Other Screen</Text>
+            <Text style={ styles.welcome }>Go to Count Screen</Text>
           </View>
         </TouchableOpacity>
       </View>
