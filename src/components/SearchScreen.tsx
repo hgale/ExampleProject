@@ -9,29 +9,19 @@ interface Props {
   navigation: NavigationScreenProp<any,any>;
 }
 
-class WelcomeScreen extends React.Component<Props, {}> {
-  openCountScreen = () => {
+class SearchScreen extends React.Component<Props, {}> {
+  pushScreen = () => {
     const navigation = this.props.navigation;
     navigation.navigate(Routes.Count);
-  }
-
-  openSearchScreen = () => {
-    const navigation = this.props.navigation;
-    navigation.navigate(Routes.Search);
   }
 
   render() {
     return (
       <View style={ styles.container }>
-        <Text style={ styles.welcome }>Welcome Screen</Text>
-        <TouchableOpacity onPress={ this.openCountScreen }>
+        <Text style={ styles.welcome }>Search Screen</Text>
+        <TouchableOpacity onPress={ this.pushScreen }>
           <View style={ styles.buttonContainer }>
             <Text style={ styles.welcome }>Go to Count Screen</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={ this.openSearchScreen }>
-          <View style={ styles.buttonContainer }>
-            <Text style={ styles.welcome }>Go to Search Screen</Text>
           </View>
         </TouchableOpacity>
       </View>
@@ -48,7 +38,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     marginTop: 50,
-    width: '60%',
+    width: '50%',
     height: 64,
     justifyContent: 'center',
     alignItems: 'center',
@@ -65,4 +55,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WelcomeScreen;
+export default SearchScreen;
