@@ -47,7 +47,8 @@ screens in the app.
 # Count Screen
 
 ```
-This screen demonstates storing and updating a count in redux. It's mainly a demo of how I structure my reducers, actions & actionTypes in a redux application.
+This screen demonstates storing and updating a count in redux. It's mainly a demo of how I structure my reducers, 
+actions & actionTypes in a redux application.
 
 ``` 
 
