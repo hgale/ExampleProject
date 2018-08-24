@@ -37,8 +37,8 @@ styles.ts colors, fonts, etc used throughout the app.
 # Welcome Screen
 
 ```
-First screen that gets displayed when the app starts. Shows a series of buttons that allow you to navigate to other demos
-screens in the app.
+First screen that gets displayed when the app starts. Shows a series of buttons that allow you 
+to navigate to other demos screens in the app.
 
 ``` 
 
@@ -58,7 +58,9 @@ actions & actionTypes in a redux application.
 # Search Screen
 
 ```
-This screen uses the the google places API to power a search box. It demos how I would do this using throttling, caching, debouncing. It's structure is broken into Presentational (UX, SearchComponent) and Container components (Business logic, SearchScreen).
+This screen uses the the google places API to power a search box. It demos how I would do this using 
+throttling, caching, debouncing. It's structure is broken into Presentational (UX, SearchComponent) 
+and Container components (Business logic, SearchScreen).
 
 https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
 
