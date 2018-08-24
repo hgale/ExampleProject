@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with loading false 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(55, 57, 62)",
+        "flex": 1,
+        "justifyContent": "space-between",
+        "width": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="search for locations"
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderRadius": 3,
+        "borderWidth": 1,
+        "margin": 10,
+        "paddingBottom": 15,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "paddingTop": 15,
+        "width": "85%",
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(55, 57, 62)",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="1B9ECC"
+      hidesWhenStopped={true}
+      size="large"
+      style={
+        Array [
+          Object {
+            "height": "70%",
+          },
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": 8,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "rgb(255, 255, 255)",
+        }
+      }
+    >
+      Loading...
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with loading true 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(55, 57, 62)",
+        "flex": 1,
+        "justifyContent": "space-between",
+        "width": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="search for locations"
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(0, 0, 0)",
+        "borderRadius": 3,
+        "borderWidth": 1,
+        "margin": 10,
+        "paddingBottom": 15,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "paddingTop": 15,
+        "width": "85%",
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(55, 57, 62)",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="1B9ECC"
+      hidesWhenStopped={true}
+      size="large"
+      style={
+        Array [
+          Object {
+            "height": "70%",
+          },
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": 8,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "rgb(255, 255, 255)",
+        }
+      }
+    >
+      Loading...
+    </Text>
+  </View>
+</View>
+`;

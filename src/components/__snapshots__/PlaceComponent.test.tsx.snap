@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "height": 60,
+      "justifyContent": "center",
+      "marginBottom": 10,
+      "marginTop": 10,
+      "width": "80%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "alignSelf": "flex-start",
+        "color": "rgb(255, 255, 255)",
+      }
+    }
+  >
+     
+    House of Shields
+     
+  </Text>
+</View>
+`;

@@ -5,6 +5,9 @@ dist
 #
 .jest/
 
+# API Keys
+src/utils/apikeys.json
+
 # Xcode
 #
 build/

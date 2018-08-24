@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgb(55, 57, 62)",
+      "justifyContent": "center",
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="1B9ECC"
+    hidesWhenStopped={true}
+    size="large"
+    style={
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": 8,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgb(255, 255, 255)",
+      }
+    }
+  >
+    Loading...
+  </Text>
+</View>
+`;

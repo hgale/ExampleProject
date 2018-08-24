@@ -9,7 +9,7 @@ interface Props {
   navigation: NavigationScreenProp<any,any>;
 }
 
-class WelcomeScreen extends React.Component<Props, {}> {
+export default class WelcomeScreen extends React.Component<Props, {}> {
   openCountScreen = () => {
     const navigation = this.props.navigation;
     navigation.navigate(Routes.Count);
@@ -64,5 +64,3 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
-
-export default WelcomeScreen;

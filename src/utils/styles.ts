@@ -4,4 +4,5 @@ export const colors = {
   LIGHT_PURPLE: 'rgb(118, 138, 212)',
   WHITE: 'rgb(255, 255, 255)',
   BLACK: 'rgb(0, 0, 0)',
+  LOADING: '1B9ECC',
 };
