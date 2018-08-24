@@ -1,5 +1,10 @@
 # TypeScript Template app
 
+```
+This is an example application built using react-navigation, redux, redux-thunk and TypeScript.
+``` 
+
+# Installation instructions
     
 ```
 
