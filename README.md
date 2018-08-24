@@ -9,8 +9,8 @@ This is an example application built using react-navigation, redux, redux-thunk 
 ```
 Structure goes here
 
-![alt text](https://github.com/hgale/ExampleProject/gifs/CountDemo.gif "Redux demo")
-![alt text](https://github.com/hgale/ExampleProject/gifs/SearchDemo.gif  "Search demo")
+![alt text](https://github.com/hgale/ExampleProject/blob/master/gifs/CountDemo.gif "Redux demo")
+![alt text](https://github.com/hgale/ExampleProject/blob/master/gifs/SearchDemo.gif  "Search demo")
 
 ``` 
 
