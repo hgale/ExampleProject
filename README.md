@@ -4,6 +4,13 @@
 This is an example application built using react-navigation, redux, redux-thunk and TypeScript.
 ``` 
 
+# Project structure
+
+```
+Structure goes here
+
+``` 
+
 # Installation instructions
     
 ```
