@@ -20,6 +20,11 @@ export default class WelcomeScreen extends React.Component<Props, {}> {
     navigation.navigate(Routes.Search);
   }
 
+  openHTMLScreen = () => {
+    const navigation = this.props.navigation;
+    navigation.navigate(Routes.HTML);
+  }
+
   render() {
     return (
       <View style={ styles.container }>
@@ -34,6 +39,11 @@ export default class WelcomeScreen extends React.Component<Props, {}> {
             <Text style={ styles.welcome }>Go to Search Screen</Text>
           </View>
         </TouchableOpacity>
+        <TouchableOpacity onPress={ this.openHTMLScreen }>
+          <View style={ styles.buttonContainer }>
+            <Text style={ styles.welcome }>Go to HTML Screen</Text>
+          </View>
+        </TouchableOpacity>        
       </View>
     );
   }
